@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Billing Card</title>
+  </head>
+  <body>
+
+    <div class="col-md-12 text-center btn-dark ">
+        <br>
+        <h1>Billing Card Demo</h1>
+         <br>
+    </div>
+
+    <table
+      class="table bg-dark table-bordered table-hover table-striped text-center table-dark text-light"
+      id="My_table"
+    >
+      <tr class="bg-dark text-light">
+        <td><h4>Status</h4></td>
+        <td><h4>Product</h4></td>
+        <td><h4>Rate</h4></td>
+        <td><h4>Quantity</h4></td>
+        <td><h4>Total</h4></td>
+      </tr>
+
+      <tr>
+        <td>
+          <h4>1</h4>
+        </td>
+
+        <td>
+          <img src="https://m.media-amazon.com/images/I/71V38Ih3xXL._SX679_.jpg" alt="" width="30%" height="60px">
+        </td>
+
+        <td>
+          <h4>200</h4>
+        </td>
+
+        <td>
+          <button class="btn btn-danger" onclick="incre1()">+</button>
+          <input
+            type="text"
+            id="inp1"
+            style="width: 10%; margin: 10px; outline: none; font-size: 20px"
+          />
+          <button class="btn btn-warning" onclick="decre1()">-</button>
+        </td>
+        <td>
+          <input type="text" id="total1" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h4>2</h4>
+        </td>
+
+        <td>
+          <img src="https://m.media-amazon.com/images/I/7192Muh-sAL._SX679_.jpg" width="30%" height="60px" alt="">
+        </td>
+
+        <td>
+          <h4>300</h4>
+        </td>
+
+        <td>
+          <button class="btn btn-danger" onclick="incre2()">+</button>
+          <input
+            type="text"
+            id="inp2"
+            style="width: 10%; margin: 10px; outline: none; font-size: 20px"
+          />
+          <button class="btn btn-warning" onclick="decre2()">-</button>
+        </td>
+
+        <td>
+          <input type="text" id="total2" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h4>3</h4>
+        </td>
+
+        <td>
+          <img src="https://m.media-amazon.com/images/I/61AS07l2cBL._SX679_.jpg" alt="" width="30%" height="60px">
+        </td>
+
+        <td>
+          <h4>1000</h4>
+        </td>
+
+        <td>
+          <button class="btn btn-danger" onclick="incre3()">+</button>
+          <input
+            type="text"
+            id="inp3"
+            style="width: 10%; margin: 10px; outline: none; font-size: 20px"
+          />
+          <button class="btn btn-warning" onclick="decre3()">-</button>
+        </td>
+        <td>
+          <input type="text" id="total3" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h4>4</h4>
+        </td>
+
+        <td>
+          <img src="https://m.media-amazon.com/images/I/61-6DzDLmjL._SX679_.jpg" alt="" width="30%" height="60px">
+        </td>
+
+        <td>
+          <h4>500</h4>
+        </td>
+
+        <td>
+          <button class="btn btn-danger" onclick="incre4()">+</button>
+          <input
+            type="text"
+            id="inp4"
+            style="width: 10%; margin: 10px; outline: none; font-size: 20px"
+          />
+          <button class="btn btn-warning" onclick="decre4()">-</button>
+        </td>
+        <td>
+          <input type="text" id="total4" />
+        </td>
+        </tr>
+      
+      <tr>
+        <td colspan="3"><h4>Final Total</h4></td>
+
+        <td colspan="1">
+        <button onclick="total5()" class="btn btn-success" style="height: 42px; width: 30%; margin-top: -4px; margin-left: 20px;">Total</button>
+            
+
+        </td>
+
+        <td> 
+
+            <input type="text" id="inp5"  style=" height: 40px;"/>
+
+        </td>
+
+
+
+      </tr>
+
+       </tr>
+      
+
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
